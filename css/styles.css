@@ -1,0 +1,207 @@
+:root {
+  --white-bg: #ffffff;
+  --dark: #2e2f42;
+  --pressed-state: #404bbf;
+  --primary-brand: #4d5ae5;
+  --primary-text: #434455;
+  --btn-secondary: #f4f4fd;
+  --btn-primary: #e7e9fc;
+}
+
+body {
+  color: var(--primary-text);
+  background-color: var(--white-bg);
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* Colors */
+/* white-bg #FFFFFF */
+/* light-mode-bg #F4F4FD  (header border)*/
+/* hero-bg #2E2F42 */
+
+/* Header */
+
+/* Logo */
+.logo {
+  color: var(--primary-brand);
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  line-height: 1.17;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.accent {
+  color: var(--dark);
+}
+
+/* Navigation */
+.nav-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--dark);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--pressed-state);
+}
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* Contacts */
+.address {
+  font-style: normal;
+}
+.contact {
+  color: var(--primary-text);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.contact:hover,
+.contact:focus {
+  color: var(--pressed-state);
+}
+
+/* Hero */
+.hero {
+  background-color: var(--dark);
+}
+.hero-title {
+  color: var(--white-bg);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.button-hero {
+  background-color: var(--primary-brand);
+  color: var(--white-bg);
+  cursor: pointer;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.button-hero:hover,
+.button-hero:focus {
+  background-color: var(--pressed-state);
+}
+.section {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dark);
+}
+/* Features */
+.title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dark);
+}
+
+.feature {
+  color: var(--primary-text);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* Our team */
+.section-title {
+  color: var(--dark);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+}
+.team {
+  background-color: var(--btn-secondary);
+}
+
+.team-member {
+  background-color: var(--white-bg);
+}
+
+.spec {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--dark);
+  color: var(--btn-secondary);
+}
+
+.footer-logo {
+  color: var(--primary-brand);
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.accent-footer {
+  color: var(--btn-secondary);
+}
+
+/* Portfolio */
+.filter-btn {
+  color: var(--primary-brand);
+  background-color: var(--btn-secondary);
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--white-bg);
+  background-color: var(--pressed-state);
+}
+
+/* Examples */
+.project-examples {
+  background-color: var(--white-bg);
+}
+
+.example {
+  text-decoration: none;
+}
+
+/* Вопрос по классам логотипа. Альтернатва написания
+
+Просто исходя из того что два логотипа схожи именно синей частью "WEB" - её обернуть в спан и задать один класс для этого спана в футере и хедере. А потом играть с цветами "studio" и текста отдельно*/
