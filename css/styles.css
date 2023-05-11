@@ -310,7 +310,7 @@ img {
   max-width: 264px;
 }
 
-/* ! Portfolio */
+/** Portfolio */
 .filter-btn {
   color: var(--primary-brand);
   background-color: var(--btn-secondary);
@@ -349,7 +349,7 @@ img {
 .example-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 48px 24px;
 }
 
 .project-pic {
