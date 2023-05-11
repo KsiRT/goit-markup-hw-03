@@ -8,6 +8,13 @@
   --btn-primary: #e7e9fc;
 }
 
+/* Colors
+white-bg #FFFFFF 
+light-mode-bg #F4F4FD  (header border)
+hero-bg #2E2F42 */
+
+/* Сommon classes */
+
 body {
   color: var(--primary-text);
   background-color: var(--white-bg);
@@ -16,13 +23,51 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+.list {
+  list-style: none;
+}
 
-/* Colors */
-/* white-bg #FFFFFF */
-/* light-mode-bg #F4F4FD  (header border)*/
-/* hero-bg #2E2F42 */
+.link {
+  text-decoration: none;
+}
 
+.section {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dark);
+  padding-top: 120px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px coral dashed;
+}
 /* Header */
+
+.header {
+  padding: 24px 0;
+}
+.header-container {
+  display: flex;
+}
 
 /* Logo */
 .logo {
@@ -34,6 +79,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
+  margin-right: 76px;
 }
 .accent {
   color: var(--dark);
@@ -46,23 +92,23 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--dark);
+  display: flex;
 }
 
 .nav-link:hover,
 .nav-link:focus {
   color: var(--pressed-state);
 }
-.list {
-  list-style: none;
-}
-
-.link {
-  text-decoration: none;
+.nav-list {
+  display: flex;
+  gap: 40px;
+  margin-right: auto;
 }
 
 /* Contacts */
 .address {
   font-style: normal;
+  margin-left: auto;
 }
 .contact {
   color: var(--primary-text);
@@ -77,9 +123,15 @@ body {
   color: var(--pressed-state);
 }
 
+.contact-list {
+  display: flex;
+  gap: 40px;
+}
+
 /* Hero */
 .hero {
   background-color: var(--dark);
+  padding: 188px 0;
 }
 .hero-title {
   color: var(--white-bg);
@@ -88,9 +140,12 @@ body {
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
+  padding: 0 316px;
+  padding-bottom: 48px;
 }
 
 .button-hero {
+  display: flex;
   background-color: var(--primary-brand);
   color: var(--white-bg);
   cursor: pointer;
@@ -99,19 +154,17 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  margin: 0 auto;
+  padding: 16px 32px;
+  border-radius: 4px;
+  border: 0;
 }
 
 .button-hero:hover,
 .button-hero:focus {
   background-color: var(--pressed-state);
 }
-.section {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--dark);
-}
+
 /* Features */
 .title {
   font-weight: 500;
@@ -119,6 +172,19 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark);
+}
+
+.feature-title {
+  margin-bottom: 8px;
+}
+
+.features-list {
+  display: flex;
+  gap: 24px;
+}
+
+.feature-container {
+  max-width: 264px;
 }
 
 .feature {
@@ -130,6 +196,17 @@ body {
   letter-spacing: 0.02em;
 }
 
+/* What are we doing */
+
+.presentation-pics {
+  display: flex;
+  gap: 24px;
+  padding-bottom: 120px;
+}
+
+.presentation-title {
+  margin-bottom: 72px;
+}
 /* Our team */
 .section-title {
   color: var(--dark);
@@ -140,14 +217,40 @@ body {
   text-align: center;
   text-transform: capitalize;
 }
+
+.team-list {
+  display: flex;
+  gap: 24px;
+  margin-top: 72px;
+  padding-bottom: 120px;
+}
 .team {
   background-color: var(--btn-secondary);
 }
 
-.team-member {
-  background-color: var(--white-bg);
+.member-photo {
+  max-width: 100%;
 }
 
+.team-member {
+  background-color: var(--white-bg);
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  background: #ffffff;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  height: 380px;
+  width: calc((100%-48px) / 3);
+}
+.member-container {
+  padding: 32px 16px;
+  text-align: center;
+}
+.member-name {
+  margin-bottom: 8px;
+}
 .spec {
   font-weight: 400;
   font-size: 16px;
@@ -162,7 +265,11 @@ body {
   color: var(--btn-secondary);
 }
 
+.footer-container {
+  padding: 100px 0;
+}
 .footer-logo {
+  display: block;
   color: var(--primary-brand);
   font-family: Raleway, sans-serif;
   font-weight: 800;
@@ -170,6 +277,7 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 16px;
 }
 .accent-footer {
   color: var(--btn-secondary);
@@ -187,6 +295,10 @@ body {
   cursor: pointer;
 }
 
+.footer-container {
+  max-width: 264px;
+}
+
 .filter-btn:hover,
 .filter-btn:focus {
   color: var(--white-bg);
@@ -201,7 +313,3 @@ body {
 .example {
   text-decoration: none;
 }
-
-/* Вопрос по классам логотипа. Альтернатва написания
-
-Просто исходя из того что два логотипа схожи именно синей частью "WEB" - её обернуть в спан и задать один класс для этого спана в футере и хедере. А потом играть с цветами "studio" и текста отдельно*/
