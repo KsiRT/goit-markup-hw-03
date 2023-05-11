@@ -58,7 +58,7 @@ ol {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px coral dashed;
+  /* outline: 2px coral dashed; */
 }
 /* Header */
 
@@ -293,10 +293,25 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+  border: 1px solid var(--btn-primary);
+  border-radius: 4px;
+}
+.portfolio-section {
+  padding-top: 96px;
 }
 
 .footer-container {
   max-width: 264px;
+}
+.filter {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+
+.filter-btn {
+  padding: 12px 24px;
 }
 
 .filter-btn:hover,
@@ -306,10 +321,31 @@ ol {
 }
 
 /* Examples */
-.project-examples {
-  background-color: var(--white-bg);
+.example-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
+.project-pic {
+  max-width: 100%;
+}
+
+.spec-container {
+  padding: 32px 16px;
+}
+.project-examples {
+  background-color: var(--white-bg);
+  border: 1px solid var(--btn-primary);
+  max-width: 360px;
+}
+
+.portfolio-container {
+  padding-bottom: 120px;
+}
+.spec-title {
+  margin-bottom: 8px;
+}
 .example {
   text-decoration: none;
 }
