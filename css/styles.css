@@ -88,19 +88,19 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--dark);
   display: flex;
   align-items: center;
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.nav-item:hover,
+.nav-item:focus {
   color: var(--pressed-state);
 }
 
 .nav-item {
   display: inline-block;
   padding: 24px 0;
+  color: var(--dark);
 }
 
 .nav-list {
